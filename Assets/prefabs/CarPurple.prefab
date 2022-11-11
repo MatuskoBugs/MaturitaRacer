@@ -124,7 +124,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   carHit: {fileID: 5505275009818545353}
   minSpeed: 0.1
-  maxSpeed: 34
+  maxSpeed: 100
   minPitch: 0.2
   maxPitch: 0
 --- !u!82 &2112783883783629514
