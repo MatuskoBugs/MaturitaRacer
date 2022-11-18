@@ -66,7 +66,6 @@ public class CarController : MonoBehaviour
         wheelRR.position = pos;
         wheelRR.rotation = rot * Quaternion.Euler(0, 180, 0);
 
-        Debug.Log(carRB.velocity.magnitude);
         if (carRB.velocity.magnitude > maxSpeed)
         {
             carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, maxSpeed);
