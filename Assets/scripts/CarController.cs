@@ -7,7 +7,7 @@ public class CarController : MonoBehaviour
     public float motorTorque = 100f;
     public float maxSteer = 20f;
     private Rigidbody carRB;
-    public float maxSpeed = 20;
+    public float maxSpeed;
 
     float velocityVSUp = 0;
     float accelInput = 0;
@@ -56,7 +56,7 @@ public class CarController : MonoBehaviour
 
         wheelColliderRF.GetWorldPose(out pos, out rot);
         wheelRF.position = pos;
-        wheelRF.rotation = rot * Quaternion.Euler(0,180,0);
+        wheelRF.rotation = rot * Quaternion.Euler(0, 180, 0);
 
         wheelColliderLR.GetWorldPose(out pos, out rot);
         wheelLR.position = pos;
@@ -65,6 +65,12 @@ public class CarController : MonoBehaviour
         wheelColliderRR.GetWorldPose(out pos, out rot);
         wheelRR.position = pos;
         wheelRR.rotation = rot * Quaternion.Euler(0, 180, 0);
+
+        Debug.Log(carRB.velocity.magnitude);
+        if (carRB.velocity.magnitude > maxSpeed)
+        {
+            carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, maxSpeed);
+        }
     }
 
     public void SetInputVector(Vector3 inputVector)

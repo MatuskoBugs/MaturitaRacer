@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using System;
 
-public enum GameStates {beforeRace, race, raceOver };
+public enum GameStates {beforeRace, race, raceOver};
 
 public class GameManager : MonoBehaviour
 {
