@@ -66,10 +66,21 @@ public class CarController : MonoBehaviour
         wheelRR.position = pos;
         wheelRR.rotation = rot * Quaternion.Euler(0, 180, 0);
 
-        if (carRB.velocity.magnitude > maxSpeed)
+        //catchup system
+
+        /*CarLapCounter CLC = gameObject.AddComponent<CarLapCounter>();
+        int position = CLC.GetCarPosition(); ked je tu toto spadne hra ked prejdes cez chceckpoint lebo mu chyba referencia. 
+        Pravdepodobne sa to bije niekde v CarLapConuter.cs. UPDT: Bije sa to s vypisovanim pozicie. CarLapCounter line 24-33 a line 86
+        Ono to ma urcite jednoduche riesenie ale ja som na to moc blby :) */
+
+        if (carRB.velocity.magnitude > maxSpeed) // && position == 1)
         {
-            carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, maxSpeed);
+            carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, (float)(maxSpeed)); //(float)(maxSpeed*0.75))
         }
+        /*else
+        {
+            carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, (float)(maxSpeed));
+        }*/
     }
 
     public void SetInputVector(Vector3 inputVector)

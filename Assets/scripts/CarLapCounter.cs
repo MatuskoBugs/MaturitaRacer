@@ -37,6 +37,11 @@ public class CarLapCounter : MonoBehaviour
         carPosition = position;
     }
 
+    public int GetCarPosition()
+    {
+        return carPosition;
+    }
+
     public int GetNumberOfCheckpointPassed()
     {
         return NumberOfPassedCheckpoints;
