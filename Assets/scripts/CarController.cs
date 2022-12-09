@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class CarController : MonoBehaviour
 {
-    public float motorTorque = 100f;
+    public float motorTorque = 400f;
     public float maxSteer = 20f;
     private Rigidbody carRB;
     public float maxSpeed;
 
-    float velocityVSUp = 0;
     float accelInput = 0;
     float turnInput = 0;
 
@@ -81,6 +80,7 @@ public class CarController : MonoBehaviour
         {
             carRB.velocity = Vector3.ClampMagnitude(carRB.velocity, (float)(maxSpeed));
         }*/
+        //Debug.Log(carRB.velocity.magnitude);
     }
 
     public void SetInputVector(Vector3 inputVector)
@@ -91,23 +91,6 @@ public class CarController : MonoBehaviour
 
     void ApplyEngineForce()
     {
-        velocityVSUp = Vector3.Dot(transform.up, carRB.velocity);
-
-        if (velocityVSUp > maxSpeed && accelInput > 0)
-        {
-            return;
-        }
-
-        if (velocityVSUp < -maxSpeed * 0.5f && accelInput < 0)
-        {
-            return;
-        }
-
-        if (carRB.velocity.sqrMagnitude > maxSpeed * maxSpeed && accelInput > 0)
-        {
-            return;
-        }
-
         if (accelInput == 0)
         {
             carRB.drag = Mathf.Lerp(carRB.drag, 2.0f, Time.fixedDeltaTime * 3);

@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
 
     GameStates gameState = GameStates.beforeRace;
 
+    float raceStartedTime = 0;
+    float raceOverTime = 0;
+
     public event Action<GameManager> OnGameStateChanged;
 
     private void Awake()
@@ -40,6 +43,14 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public float GetRaceTime()
+    {
+        if (gameState == GameStates.raceOver)
+        { return raceOverTime - raceStartedTime; }
+        else
+        { return Time.time - raceStartedTime; }
+    }
+
     void LevelStart()
     {
         gameState = GameStates.beforeRace;
@@ -47,11 +58,15 @@ public class GameManager : MonoBehaviour
 
     public void RaceStart()
     {
+        raceStartedTime = Time.time;
+
         ChangeGameState(GameStates.race);
     }
 
     public void RaceOver()
     {
+        raceOverTime = Time.time;
+
         ChangeGameState(GameStates.raceOver);
     }
 
