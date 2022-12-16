@@ -4,5 +4,35 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 23155904ed4a859419c15c55cc6a6cb6
+  - enabled: 1
+    path: Assets/Scenes/RaceMenu.unity
+    guid: bc4f77eb928d68346bce82ba05a3c5c3
+  - enabled: 1
+    path: Assets/Scenes/Rally1P.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/Rally2P.unity
+    guid: d9ecda037b25c924890abec044db3236
+  - enabled: 1
+    path: Assets/Scenes/Rally3P.unity
+    guid: 8c01c140bea95ed45a2552ac2271e8b2
+  - enabled: 1
+    path: Assets/Scenes/Rally4P.unity
+    guid: 37afc8381a008ae4d97d5aff749fd24b
+  - enabled: 1
+    path: Assets/Scenes/Park1P.unity
+    guid: 8bdc3e7ef11b2464781ddad5679b5aec
+  - enabled: 1
+    path: Assets/Scenes/Park2P.unity
+    guid: cf045cf960d74b641ba8a7ff4d2b0075
+  - enabled: 1
+    path: Assets/Scenes/Park3P.unity
+    guid: ff6670b9096a7484589788e27226c584
+  - enabled: 1
+    path: Assets/Scenes/Park4P.unity
+    guid: 2ef68c545fd35024b9a1983e5270249f
   m_configObjects: {}

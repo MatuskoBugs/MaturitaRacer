@@ -70,7 +70,7 @@ public class LeaderboardMain : MonoBehaviour
 
     public void Menu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("RaceMenu");
     }
 
     void OnDestroy()

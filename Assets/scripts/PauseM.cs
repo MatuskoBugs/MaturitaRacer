@@ -50,7 +50,7 @@ public class PauseM : MonoBehaviour
     public void Menu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        SceneManager.LoadScene("RaceMenu");
         GamePaused = false;
     }
 }
