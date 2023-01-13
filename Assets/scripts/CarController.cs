@@ -38,10 +38,7 @@ public class CarController : MonoBehaviour
         }
 
         ApplyEngineForce();
-
-        wheelColliderLF.steerAngle = turnInput * maxSteer;
-        wheelColliderRF.steerAngle = turnInput * maxSteer;
-
+        ApplySteering();
     }
 
     private void Update()
@@ -102,5 +99,11 @@ public class CarController : MonoBehaviour
 
         wheelColliderLR.motorTorque = accelInput * motorTorque;
         wheelColliderRR.motorTorque = accelInput * motorTorque;
+    }
+
+    void ApplySteering()
+    {
+        wheelColliderLF.steerAngle = turnInput * maxSteer;
+        wheelColliderRF.steerAngle = turnInput * maxSteer;
     }
 }
