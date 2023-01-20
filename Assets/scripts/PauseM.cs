@@ -2,18 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class PauseM : MonoBehaviour
 {
-
     public static bool GamePaused = false;
 
     public GameObject pauseMenuUi;
 
-    // Update is called once per frame
+    public GameObject pauseFirst;
+    
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.Joystick1Button7))
         {
             if (GamePaused)
             {
@@ -38,6 +39,8 @@ public class PauseM : MonoBehaviour
         pauseMenuUi.SetActive(true);
         Time.timeScale = 0f;
         GamePaused = true;
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(pauseFirst);
     }
 
     public void Restart()
