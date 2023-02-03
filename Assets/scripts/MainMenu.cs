@@ -15,4 +15,10 @@ public class MainMenu : MonoBehaviour
         Debug.Log("Akoze som sa vypol :)");
         Application.Quit();
     }
+
+    public void FullSc()
+    {
+        Screen.fullScreen = !Screen.fullScreen;
+        Debug.Log("I was pressed yay :D");
+    }
 }

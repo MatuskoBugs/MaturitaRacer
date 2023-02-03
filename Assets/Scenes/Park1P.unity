@@ -557,7 +557,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 47775839847779850, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_Name
-      value: SportWhite
+      value: SportPurple(P1)
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_RootOrder
@@ -565,15 +565,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 19.589
+      value: 19.59
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 41.49
+      value: 41.48
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 92
+      value: 87.88
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -607,6 +607,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 450
       objectReference: {fileID: 0}
+    - target: {fileID: 6276313619582566194, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bb88b8d3b0115964a9625c22c4e0badc, type: 3}
 --- !u!1 &1333145609

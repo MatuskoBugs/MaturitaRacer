@@ -474,7 +474,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 47775839847779850, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
       propertyPath: m_Name
-      value: CarPurple
+      value: RallyPurple(P1)
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
       propertyPath: m_RootOrder
@@ -520,6 +520,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4746502279768924898, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
 --- !u!1001 &603426622
@@ -529,9 +533,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4344573952195506771, guid: cc6ca1c03e325b14185bbcfb112991f9, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 8154863852854460131, guid: cc6ca1c03e325b14185bbcfb112991f9, type: 3}
       propertyPath: m_Name
-      value: CarOrange
+      value: RallyOrange(P2)
       objectReference: {fileID: 0}
     - target: {fileID: 8154863852854460135, guid: cc6ca1c03e325b14185bbcfb112991f9, type: 3}
       propertyPath: m_RootOrder
@@ -837,7 +845,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 47775839847779850, guid: 01ba2ca6065f3054cae2d24deaa208f9, type: 3}
       propertyPath: m_Name
-      value: CarLime
+      value: RallyLime(P3)
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: 01ba2ca6065f3054cae2d24deaa208f9, type: 3}
       propertyPath: m_RootOrder
@@ -887,6 +895,10 @@ PrefabInstance:
       propertyPath: playerNumber
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 5091873503961506671, guid: 01ba2ca6065f3054cae2d24deaa208f9, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01ba2ca6065f3054cae2d24deaa208f9, type: 3}
 --- !u!1 &1103234579
@@ -1016,9 +1028,13 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5744801348542471151, guid: 5f19be8db562a234da70fa65172c0e87, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     - target: {fileID: 8154863852854460131, guid: 5f19be8db562a234da70fa65172c0e87, type: 3}
       propertyPath: m_Name
-      value: CarPink
+      value: RallyPink(P4)
       objectReference: {fileID: 0}
     - target: {fileID: 8154863852854460135, guid: 5f19be8db562a234da70fa65172c0e87, type: 3}
       propertyPath: m_RootOrder

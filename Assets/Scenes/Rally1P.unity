@@ -791,7 +791,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 47775839847779850, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
       propertyPath: m_Name
-      value: CarPurple
+      value: RallyPurple(P1)
       objectReference: {fileID: 0}
     - target: {fileID: 856365021092467888, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
       propertyPath: m_RootOrder
@@ -841,6 +841,10 @@ PrefabInstance:
       propertyPath: LapstoComplete
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4746502279768924898, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
+      propertyPath: obj
+      value: 
+      objectReference: {fileID: 963194225}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9cb6b574dd16cec4596743fa8782a70b, type: 3}
 --- !u!1 &1294630193
