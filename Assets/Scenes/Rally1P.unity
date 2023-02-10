@@ -209,8 +209,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 32650596}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 722.35, y: 207.39, z: 607.65}
-  m_LocalScale: {x: 1, y: 6.25, z: 17.6}
+  m_LocalPosition: {x: 722.35, y: 207.39, z: 605.09}
+  m_LocalScale: {x: 1, y: 6.25, z: 25.317602}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1937945075}
@@ -250,6 +250,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1365445131174725008, guid: 0da0d741877a2b849b3d3ca6ddbbb801, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.3
+      objectReference: {fileID: 0}
     - target: {fileID: 5119308269859483435, guid: 0da0d741877a2b849b3d3ca6ddbbb801, type: 3}
       propertyPath: m_Name
       value: rallytrack
